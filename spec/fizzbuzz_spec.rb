@@ -10,4 +10,7 @@ describe 'fizzbuzz' do
   it 'returns "fizzbuzz" when passed a number which is divisible by 3 & 5. This should override any previous fizz or buzz' do
     expect(fizzbuzz(30)).to eq 'fizzbuzz'
   end
+  it 'returns the number when it is passed a number not divisible by 3 or 5' do
+    expect(fizzbuzz(2)).to eq '2'
+  end
 end
